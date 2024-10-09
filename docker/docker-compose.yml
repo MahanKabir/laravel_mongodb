@@ -31,7 +31,7 @@ services:
     networks:
       - docker-mongo-network
   mongo:
-      container_name: "docker-t4f-mongo"
+      container_name: "docker-mongo-php"
       image: mongo
       restart: always
       ports:
@@ -45,7 +45,7 @@ services:
       networks:
           - docker-mongo-network
   mongo-express:
-      container_name: "docker-t4f-mongo-express"
+      container_name: "docker-mongo-express"
       image: mongo-express
       restart: always
       ports:
