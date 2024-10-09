@@ -94,11 +94,11 @@ return [
         ],
         'mongodb' => [
             'driver' => 'mongodb',
-            'host' => 'mongo',
-            'port' => 27017,
-            'database' => 'test',
-            'username' => 'root',
-            'password' => 'example',
+            'host' => env('DB_HOST'),
+            'port' => env('DB_PORT'),
+            'database' => env('DB_DATABASE'),
+            'username' => env('DB_USERNAME'),
+            'password' => env('DB_PASSWORD'),
             'options' => [
                 'authMechanism' => 'SCRAM-SHA-1'
             ],
